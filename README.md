@@ -4,15 +4,17 @@ The library provides simple number picker. The number is selected with the swipe
 
   ![Demo](snp.gif)
 
+
 # Usage
 
 Just add the dependency to your `build.gradle`:
 
 ```groovy
 dependencies {
-    compile 'com.github.supervital:swipenumberpicker:1.0.1'
+    compile 'com.github.supervital:swipenumberpicker:1.0.2'
 }
 ```
+
 In layout:
 
 ```xml
@@ -64,9 +66,15 @@ Also you can:
 * set value.
 
 
+# Change Log
 
-License
-=======
+###### v1.0.1
+	Initial release
+###### v1.0.2
+	Prefixed custom attributes to avoid any issue
+
+
+# License
 
     Copyright (C) 2015 Vitalii Ishchuk
 
