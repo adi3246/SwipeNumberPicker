@@ -22,23 +22,23 @@ In layout:
 	android:layout_height="wrap_content"
 	android:layout_alignParentBottom="true"
 	android:layout_alignParentLeft="true"
-	app:numberColor="@android:color/white"
-	app:arrowColor="@android:color/white"
-	app:backgroundColor="@color/colorAccent"
-	app:max="1000"
-	app:min="50"
-	app:value="95"/>
+	app:snp_numberColor="@android:color/white"
+	app:snp_arrowColor="@android:color/white"
+	app:snp_backgroundColor="@color/colorAccent"
+	app:snp_max="1000"
+	app:snp_min="50"
+	app:snp_value="95"/>
 ```
 
 Attributes:
 
 ``` xml
-	<attr name="min" format="integer"/>
-	<attr name="max" format="integer"/>
-	<attr name="value" format="integer"/>
-	<attr name="arrowColor" format="color"/>
-	<attr name="backgroundColor" format="color"/>
-	<attr name="numberColor" format="color"/>
+	<attr name="snp_min" format="integer"/>
+	<attr name="snp_max" format="integer"/>
+	<attr name="snp_value" format="integer"/>
+	<attr name="snp_arrowColor" format="color"/>
+	<attr name="snp_backgroundColor" format="color"/>
+	<attr name="snp_numberColor" format="color"/>
 ```
 
 To set changed value implement the `OnValueChangeListener` listener and on `onValueChange` return `true`
