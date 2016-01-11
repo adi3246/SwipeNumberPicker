@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:snp="http://schemas.android.com/apk/res-auto"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -65,8 +65,8 @@
         android:layout_below="@id/tv_implemented_lbl"
         android:layout_toEndOf="@id/tv_hello"
         android:layout_toRightOf="@id/tv_hello"
-        snp:arrowColor="@color/colorPrimary"
-        snp:numberColor="@color/colorPrimaryDark"/>
+        app:snp_arrowColor="@color/colorPrimary"
+        app:snp_numberColor="@color/colorPrimaryDark"/>
 
     <TextView
         android:id="@+id/tv_result_1"
@@ -96,12 +96,12 @@
         android:layout_below="@id/tv_custom_lbl"
         android:layout_toEndOf="@id/tv_hello"
         android:layout_toRightOf="@id/tv_hello"
-        snp:arrowColor="@android:color/white"
-        snp:backgroundColor="@color/colorAccent"
-        snp:max="1000"
-        snp:min="50"
-        snp:numberColor="@android:color/white"
-        snp:value="95"/>
+        app:snp_arrowColor="@android:color/white"
+        app:snp_backgroundColor="@color/colorAccent"
+        app:snp_max="1000"
+        app:snp_min="50"
+        app:snp_numberColor="@android:color/white"
+        app:snp_value="95"/>
 
     <TextView
         android:id="@+id/tv_result_2"

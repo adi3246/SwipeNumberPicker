@@ -78,13 +78,13 @@ public class SwipeNumberPicker extends TextView {
 				R.styleable.SwipeNumberPicker, 0, 0);
 		if (attrs != null) {
 			try {
-				mPrimaryValue = attrs.getInteger(R.styleable.SwipeNumberPicker_value, 0);
-				mMinValue = attrs.getInteger(R.styleable.SwipeNumberPicker_min, -9999);
-				mMaxValue = attrs.getInteger(R.styleable.SwipeNumberPicker_max, 9999);
+				mPrimaryValue = attrs.getInteger(R.styleable.SwipeNumberPicker_snp_value, 0);
+				mMinValue = attrs.getInteger(R.styleable.SwipeNumberPicker_snp_min, -9999);
+				mMaxValue = attrs.getInteger(R.styleable.SwipeNumberPicker_snp_max, 9999);
 
-				mArrowColor = attrs.getColor(R.styleable.SwipeNumberPicker_arrowColor, context.getResources().getColor(R.color.arrows));
-				mBackgroundColor = attrs.getColor(R.styleable.SwipeNumberPicker_backgroundColor, context.getResources().getColor(R.color.background));
-				mNumColor = attrs.getColor(R.styleable.SwipeNumberPicker_numberColor, context.getResources().getColor(R.color.text));
+				mArrowColor = attrs.getColor(R.styleable.SwipeNumberPicker_snp_arrowColor, context.getResources().getColor(R.color.arrows));
+				mBackgroundColor = attrs.getColor(R.styleable.SwipeNumberPicker_snp_backgroundColor, context.getResources().getColor(R.color.background));
+				mNumColor = attrs.getColor(R.styleable.SwipeNumberPicker_snp_numberColor, context.getResources().getColor(R.color.text));
 			} finally {
 				attrs.recycle();
 			}
