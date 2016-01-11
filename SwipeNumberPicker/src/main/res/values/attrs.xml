@@ -1,12 +1,12 @@
 <resources>
 
 	<declare-styleable name="SwipeNumberPicker">
-		<attr name="min" format="integer"/>
-		<attr name="max" format="integer"/>
-		<attr name="value" format="integer"/>
-		<attr name="arrowColor" format="color"/>
-		<attr name="backgroundColor" format="color"/>
-		<attr name="numberColor" format="color"/>
+		<attr name="snp_min" format="integer"/>
+		<attr name="snp_max" format="integer"/>
+		<attr name="snp_value" format="integer"/>
+		<attr name="snp_arrowColor" format="color"/>
+		<attr name="snp_backgroundColor" format="color"/>
+		<attr name="snp_numberColor" format="color"/>
 	</declare-styleable>
 
 </resources>
