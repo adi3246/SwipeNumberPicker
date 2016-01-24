@@ -53,6 +53,7 @@ public class SwipeNumberPicker extends TextView {
 	private String mDialogTitle = "";
 
 	private boolean mIsShowNumberPickerDialog = true;
+	private boolean mIntermediate = false;
 
 	private AlertDialog numberPickerDialog;
 
@@ -85,6 +86,8 @@ public class SwipeNumberPicker extends TextView {
 				mArrowColor = attrs.getColor(R.styleable.SwipeNumberPicker_snp_arrowColor, context.getResources().getColor(R.color.arrows));
 				mBackgroundColor = attrs.getColor(R.styleable.SwipeNumberPicker_snp_backgroundColor, context.getResources().getColor(R.color.background));
 				mNumColor = attrs.getColor(R.styleable.SwipeNumberPicker_snp_numberColor, context.getResources().getColor(R.color.text));
+
+				mIntermediate = attrs.getBoolean(R.styleable.SwipeNumberPicker_snp_intermediate, false);
 			} finally {
 				attrs.recycle();
 			}
@@ -158,6 +161,8 @@ public class SwipeNumberPicker extends TextView {
 					}
 					mIntermediateValue += distance > 0 ? threshold : -threshold;
 					changeValue((int) mIntermediateValue);
+					if (mIntermediate)
+						notifyListener((int) mIntermediateValue);
 				}
 				mIntermediateX = currentX;
 				break;
@@ -408,5 +413,13 @@ public class SwipeNumberPicker extends TextView {
 
 	public void setMaxValue(int maxValue) {
 		mMaxValue = maxValue;
+	}
+
+	public boolean isIntermediate() {
+		return mIntermediate;
+	}
+
+	public void setIntermediate(boolean intermediate) {
+		mIntermediate = intermediate;
 	}
 }

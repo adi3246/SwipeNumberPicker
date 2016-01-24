@@ -7,6 +7,7 @@
 		<attr name="snp_arrowColor" format="color"/>
 		<attr name="snp_backgroundColor" format="color"/>
 		<attr name="snp_numberColor" format="color"/>
+		<attr name="snp_intermediate" format="boolean"/>
 	</declare-styleable>
 
 </resources>
