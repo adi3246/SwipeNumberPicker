@@ -5,6 +5,8 @@ The library provides simple number picker. The number is selected with the swipe
   ![Demo](snp.gif)
 
 
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-SwipeNumberPicker-green.svg?style=true)](https://android-arsenal.com/details/1/3025)
+
 # Usage
 
 Just add the dependency to your `build.gradle`:
@@ -63,7 +65,8 @@ Also you can:
 * disable/enable Showing of a NumberPicker Dialog. If the dialog disabled `View.OnClickListener` will be called;
 * set the dialog title;
 * set min, max values;
-* set value.
+* set value;
+* set intermediate mode.
 
 
 # Change Log
@@ -72,8 +75,10 @@ Also you can:
 	Initial release
 ###### v1.0.2
 	Prefixed custom attributes to avoid any issue
-
-
+###### v1.0.3
+	Implemented intermediate mode suggested [MFlisar](https://github.com/MFlisar)
+	
+	
 # License
 
     Copyright (C) 2015 Vitalii Ishchuk
