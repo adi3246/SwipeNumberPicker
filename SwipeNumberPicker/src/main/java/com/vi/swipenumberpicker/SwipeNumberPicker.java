@@ -240,6 +240,7 @@ public class SwipeNumberPicker extends TextView {
 				new DialogInterface.OnClickListener() {
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
+						numberPicker.clearFocus();
 						int newValue = numberPicker.getValue();
 						changeValue(newValue);
 						notifyListener(newValue);
