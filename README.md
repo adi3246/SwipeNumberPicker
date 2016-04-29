@@ -13,7 +13,7 @@ Just add the dependency to your `build.gradle`:
 
 ```groovy
 dependencies {
-    compile 'com.github.supervital:swipenumberpicker:1.0.3'
+    compile 'com.github.supervital:swipenumberpicker:1.0.4'
 }
 ```
 
@@ -77,7 +77,8 @@ Also you can:
 	Prefixed custom attributes to avoid any issue
 ###### v1.0.3
 	Implemented intermediate mode suggested [MFlisar](https://github.com/MFlisar)
-	
+###### v1.0.4
+	Fixed issue #6
 	
 # License
 
